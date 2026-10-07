@@ -8,17 +8,35 @@ function RegistrationSummary({
 }) {
   return (
     <div className="card p-4">
-      <h2 className="mb-4 ">Registration Summary</h2> <br></br>
+      <h2 className="mb-4">Registration Summary</h2>
+
       <div className="w-75 mx-auto text-start">
-      <p><strong>Name:</strong> {name}</p>
-      <p><strong>Email:</strong> {email}</p>
-      <p><strong>Phone:</strong> {phone}</p>
-      <p><strong>City:</strong> {city}</p>
-      <p><strong>Gender:</strong> {gender}</p>
-      <p>
-        <strong>Terms:</strong>{" "}
-        {terms ? "Accepted" : "Not Accepted"}
-      </p>
+
+        <p>
+          <strong>Name:</strong> {name}
+        </p>
+
+        <p>
+          <strong>Email:</strong> {email}
+        </p>
+
+        <p>
+          <strong>Phone:</strong> {phone}
+        </p>
+
+        <p>
+          <strong>City:</strong> {city}
+        </p>
+
+        <p>
+          <strong>Gender:</strong> {gender}
+        </p>
+
+        <p>
+          <strong>Terms:</strong>{" "}
+          {terms !== null && (terms ? "Accepted" : "Not Accepted")}
+        </p>
+
       </div>
     </div>
   );
